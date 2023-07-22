@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        select {
+            overflow-y: hidden;
+        }
+    </style>
+    <h1>Đây là website của tôi</h1>
+    <!-- nhúng trang web iframe -->
+    <iframe src="https://28tech.com.vn/" width="500px" height="500px"></iframe>
+    <!-- nhúng video youtube -->
+    <h1>Dây là video của tôi</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/z2zfO2yWyNw" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Đây là bản đồ trường DHCN</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17711.7234677455!2d105.7233612220811!3d21.05543363824824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1686627133487!5m2!1svi!2s" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>Tạo Form</h1>
+    <!-- novalidate -->
+    <!-- <form action="https://www.w3schools.com/action_page.php" target="_blank"
+    method="post" autocomplete="on">
+        <label for="fullname">Họ tên</label>
+        <br/>
+        <input type="text" id="fullname" name="full_name">
+        <br/>
+        <label for="email">Email</label>
+        <br/>
+        <input type="text" id="email" name="Email">
+        <br/> <br/>
+        <input type="submit" value="Gửi">
+    </form> -->
+    <!-- select -->
+    <form action="https://www.w3schools.com/action_page.php" target="_blank"
+    method="get" autocomplete="on">
+        <label for="fullname">Họ tên(value)</label>
+        <br/>
+        <input type="text" id="fullname" name="full_name" value="Đỗ Thành Vinh"> 
+        <br/>
+        <label for="fullname1">Họ tên(value, readonly)</label>
+        <br/>
+        <input type="text" id="fullname1" name="full_name" value="Đỗ Thành Vinh" readonly> 
+        <br/>
+        <label for="fullname3">Họ tên(value, disabled)</label>
+        <br/>
+        <input type="text" id="fullname3" name="full_name" value="Đỗ Thành Vinh" disabled> 
+        <br/>
+        <label for="fullname4">Họ tên( placehoder, required)</label>
+        <br/>
+        <input type="text" id="fullname4" name="full_name" placeholder="Ví dụ: Đỗ thành vinh" required> 
+        <br/>
+        <label for="MauSac">Màu sắc(select)</label>
+        <br/>
+        <select name="color" id="MauSac" size="4" multiple>
+            <option value="red">Màu đỏ</option>
+            <option value="yellow" selected>Màu vàng</option>
+            <option value="white">Màu trắng</option>
+            <option value="black">Màu đen</option>
+        </select>
+        <br/>
+        <label for="age">Tuổi(number, min max)</label>
+        <br/>
+        <!-- maxlength: độ dài chuỗi -->
+        <input type="number" id="age" name="age" min="1" max="200">
+        <br/>
+        <label for="time">Chọn thời gian(time)</label>
+        <br/>
+        <input type="time" id="time" name="time">
+        <br/>
+        <label for="datetime">Chọn thời gian(datetime-local)</label>
+        <br/>
+        <input type="datetime-local" id="datetime" name="datetime">
+        <br/>
+        <label for="date">Sinh nhật(date)</label>
+        <br/>
+        <input type="date" id="date" name="date">
+        <br/>
+        <label for="file">Chọn file(file)</label>
+        <br/>
+        <input type="file" id="file" name="file">
+        <br/>
+        <div>Sở thích của bạn là(checkbox)</div>
+        <input type="checkbox" id="sothich1" name="SoThich" value="Đi du lịch">
+        <label for="sothich1">Đi du lịch</label>
+        <br/>
+        <input type="checkbox" id="sothich2" name="SoThich" value="Đi chơi">
+        <label for="sothich2">Đi chơi</label>
+        <br/>
+        <input type="checkbox" id="sothich3" name="SoThich" value="Đi bơi">
+        <label for="sothich3">Đi bơi</label>
+        <br/>
+        <div>Sở thích của bạn thích nhất là(radio)</div>
+        <input type="radio" id="sothich4" name="SoThich" value="Đi du lịch">
+        <label for="sothich4">Đi du lịch</label>
+        <br/>
+        <input type="radio" id="sothich5" name="SoThich" value="Đi chơi">
+        <label for="sothich5">Đi chơi</label>
+        <br/>
+        <input type="radio" id="sothich6" name="SoThich" value="Đi bơi">
+        <label for="sothich6">Đi bơi</label>
+        <br/>
+        <label for="vollum">vollum(range)</label>
+        <br/>
+        <input type="range" id="vollum" name="vollum">
+        <br/>
+        <label for="color">color(color)</label>
+        <br/>
+        <input type="color" id="color" name="color">
+        <br/>
+        <label for="ghichu">Ghi chú(textarea)</label>
+        <br/>
+        <textarea name="ghi_chu" id="ghichu" cols="30" rows="5"></textarea>
+        <br/> <br/>
+        <!-- <input type="submit" value="Gửi"> -->
+        <button type="submit">Gửi</button>
+    </form>
+    
+</body>
+</html>
